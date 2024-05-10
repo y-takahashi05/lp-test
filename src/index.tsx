@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // AOS styles
+
+AOS.init({
+  duration: 1200, // values from 0 to 3000, with step 50ms
+});
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
